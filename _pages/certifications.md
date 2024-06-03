@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Certifications"
+title: ""
 permalink: /certifications/
 author_profile: true
 ---
@@ -13,11 +13,15 @@ author_profile: true
   {% include archive-single-certs.html certification=certification %}
 {% endfor %}
 
+***
+
 <h1>Machine Learning</h1>
 {% assign ML_certs = site.certifications | where: "category", "ML" %}
 {% for certification in ML_certs %}
   {% include archive-single-certs.html certification=certification %}
 {% endfor %}
+
+***
 
 <h1>Data Analysis/Engineering</h1>
 {% assign data_certs = site.certifications | where: "category", "data" %}
