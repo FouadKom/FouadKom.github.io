@@ -1,7 +1,7 @@
 ---
 title: "Towards a privacy conserved and linked open data based device recommendation in iot"
 collection: publications
-permalink: /publication/2009-10-01-paper-title-number-1
+permalink: /publication/2021-05-Towards a privacy conserved and linked open data based device recommendation in iot
 excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
 date: 2021-05
 venue: 'Service-Oriented Computing – ICSOC 2020 Workshops'
