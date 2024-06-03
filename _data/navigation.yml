@@ -6,6 +6,9 @@ main:
   - title: "Portfolio"
     url: /portfolio/
 
+  - title: "Certifications"
+    url: /certifications/
+
   - title: "Projects"
     url: /projects/
    
