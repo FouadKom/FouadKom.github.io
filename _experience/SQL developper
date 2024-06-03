@@ -1,10 +1,15 @@
 ---
 title: "SQL Developper"
 collection: experience
+type: "Undergraduate course"
 permalink: /experience/SQL developper
-excerpt: 'I also have couple of years of experience in working with Microsoft SQL Server databases and data integration using SQL Server Integration Service.'
+venue: "Munchy Bytes"
 date: 2018-09-01
-venue: 'Munchy Bytes, Beirut, Lebanon'
-citation: ''
+location: "Beirut, Lebanon"
 ---
+
+- Designing and implementing SQL Server databases to meet specific client requirements.
+- Configuring and scheduling SSIS jobs to automate data integration processes.
+- Collaborating with business teams to understand data integration
+- requirements and ensure their effective implementation using SSIS.
 
