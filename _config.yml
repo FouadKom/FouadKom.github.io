@@ -216,6 +216,9 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  certifications:
+    output: true
+    permalink: /:collection/:path/
 
 
 # Defaults
