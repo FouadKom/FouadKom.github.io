@@ -1,9 +1,7 @@
 # main links links
 main:
-  - title: "CV"
-    url: /files/CV__Fouad_Komeiha_EN.pdf
-    
- # - title: "Portfolio"
+      
+  # - title: "Portfolio"
   #  url: /portfolio
 
   - title: "Certifications"
@@ -14,3 +12,6 @@ main:
    
   - title: "Publications"
     url: /publications/
+
+  - title: "CV"
+    url: /files/CV__Fouad_Komeiha_EN.pdf
