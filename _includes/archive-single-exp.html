@@ -1,1 +1,57 @@
+<div class="{{ include.type | default: "list" }}__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    {% if include.type == "grid" and teaser %}
+      <div class="archive__item-teaser">
+        <img src=
+          {% if teaser contains "://" %}
+            "{{ teaser }}"
+          {% else %}
+            "{{ teaser | prepend: "/images/" | prepend: base_path }}"
+          {% endif %}
+          alt="">
+      </div>
+    {% endif %}
+
+    <h2 class="archive__item-title" itemprop="headline">
+      {% if experience.URL %}
+        <a href="{{ experience.URL }}">{{ experience.title }}</a> <a href="{{ base_path }}{{ experience.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+      {% else %}
+        <a href="{{ base_path }}{{ experience.url }}" rel="permalink">{{ experience.title }}</a>
+      {% endif %}
+    </h2>
+    
+    {% if experience.read_time %}
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
+    {% endif %}
+
+    <p>Venue: <i>{{ experience.venue }}</i> on {{ experience.date | date: "%B %d, %Y" }}</p>
+
+    {% if experience.location %}
+      <p>Location: {{ experience.location }}</p>
+    {% endif %}
+
+    {% if experience.excerpt and site.read_more != 'enabled' %}
+    <p class="archive__item-excerpt" itemprop="description">{{ experience.excerpt | markdownify }}</p>
+    {% elsif experience.excerpt and site.read_more == 'enabled' %}
+    <p class="archive__item-excerpt" itemprop="description"><p>{{ experience.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ experience.url }}" rel="permalink"> Read more</a></strong></p></p>
+    {% endif %}
+
+    {% if experience.citation and experience.documenturl %}
+      <p>Recommended citation: {{ experience.citation }}<br /><a href="{{ experience.documenturl }}">Download Experience Document</a></p>
+    {% elsif experience.citation %}
+      <p>Recommended citation: {{ experience.citation }}</p>
+    {% elsif experience.documenturl %}
+      <p><a href="{{ experience.documenturl }}">Download Experience Document</a></p>
+    {% endif %}
+
+    {% if experience.details %}
+      <ul>
+        {% for detail in experience.details %}
+          <li>{{ detail }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+  </article>
+</div>
 
