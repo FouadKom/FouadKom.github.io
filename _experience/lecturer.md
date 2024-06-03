@@ -1,3 +1,4 @@
+---
 title: "Lecturer, M2 Complementary Skills in Computer Science (CCI)"
 collection: experience
 type: ""
@@ -14,4 +15,4 @@ details:
 URL: ""
 read_time: 
 citation: ""
-
+---
