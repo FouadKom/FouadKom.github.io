@@ -13,6 +13,4 @@ details:
 - Collaborating with business teams to understand data integration
 - requirements and ensure their effective implementation using SSIS.
 URL: ""
-read_time: 
-citation: ""
 ---
