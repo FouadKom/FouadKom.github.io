@@ -28,23 +28,27 @@ author:
   location         : "Tours, France"
   employer         : ""
   #uri              : # URL
-  email            : "fouadkomeiha@gmail.com" 
+  email            : "fouadkomeiha@gmail.com"
+  linkedin         : "linkedin.com/in/fouad-komeiha/"
+  github           : "FouadKom"
+  kaggle           : "fouadkomeiha" 
 
   # Academic websites
   #arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : "https://scholar.google.com/citations?user=9VebkDsAAAAJ&hl=fr"
+  researchgate     : "https://www.researchgate.net/profile/Fouad-Komeiha"
   #impactstory      : # URL
   orcid            : "https://orcid.org/0000-0003-3224-8185"
   #semantic         : # URL
   #pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  researchgate     : "https://www.researchgate.net/profile/Fouad-Komeiha"
+  
 
   # Repositories and software development
   #bitbucket        : # Username - Update with your username on the site
   #codepen          : # Username
   #dribbble         : # Username
-  github           : "FouadKom"
-  kaggle           : "fouadkomeiha" 
+  #github           : "FouadKom"
+  #kaggle           : "fouadkomeiha" 
   #stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
@@ -57,7 +61,7 @@ author:
   #keybase          : # Username
   #instagram        : # Username
   #lastfm           : # Username
-  linkedin         : "linkedin.com/in/fouad-komeiha/"
+  #linkedin         : "linkedin.com/in/fouad-komeiha/"
   #mastodon         : # URL
   #medium           : # URL
   #pinterest        : # Username
