@@ -3,7 +3,7 @@ title: "Towards a privacy conserved and linked open data based device recommenda
 collection: publications
 permalink: /publication/2021-05-Towards a privacy conserved and linked open data based device recommendation in iot
 excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2021-05
+date: 2021-05-01
 venue: 'Service-Oriented Computing – ICSOC 2020 Workshops'
 citation: 'Komeiha, Fouad & Cheniki, Nasredine & Sam, Yacine & Jaber, Ali & Messai, Nizar. (2021). Towards a Privacy Conserved and Linked Open Data Based Device Recommendation in IoT. 10.1007/978-3-030-76352-7_5. '
 ---
