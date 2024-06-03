@@ -204,7 +204,7 @@ kramdown:
 
 # Collections
 collections:
-  experince:
+  experience:
     output: true
     permalink: /:collection/:path/
   publications:
