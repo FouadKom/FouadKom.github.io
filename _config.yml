@@ -204,7 +204,7 @@ kramdown:
 
 # Collections
 collections:
-  teaching:
+  experince:
     output: true
     permalink: /:collection/:path/
   publications:
@@ -213,7 +213,7 @@ collections:
   portfolio:
     output: true
     permalink: /:collection/:path/
-  talks:
+  education:
     output: true
     permalink: /:collection/:path/
   certifications:
