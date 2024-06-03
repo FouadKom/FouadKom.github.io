@@ -21,7 +21,7 @@ repository               : "FouadKom/FouadKom.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "CV-photo.jpeg"
+  avatar           : "CV-photo2.jpeg"
   name             : "Fouad Komeiha"
   pronouns         : # example: "she/her"  
   bio              : "PhD in Computer Science, Recommendation Systems and the Semantic Web."
