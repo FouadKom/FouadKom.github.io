@@ -72,3 +72,4 @@ Git
 - English: Full Proficiency
 - French: Professional Working Proficiency (Level B1)
 - Arabic: Native
+  
