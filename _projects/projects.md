@@ -1,4 +1,4 @@
-## Projects
+## Projects:
 ### [Linked Data Similarity](https://github.com/FouadKom/lds):
 - Designed and Implemented an open-source Java-Maven project implementing some of the semantic similarity measures based on Linked Open Data (LOD).
 - LDS was the base for my proposed IoT device Recommendation System and the engine for device comparison.
