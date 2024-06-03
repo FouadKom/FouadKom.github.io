@@ -1,3 +1,4 @@
+---
 title: "SQL Developper"
 collection: experience
 type: ""
@@ -10,4 +11,4 @@ details:
 - Configuring and scheduling SSIS jobs to automate data integration processes.
 - Collaborating with business teams to understand data integration
 - requirements and ensure their effective implementation using SSIS.
-
+---
