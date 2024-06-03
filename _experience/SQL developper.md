@@ -1,7 +1,6 @@
 ---
 title: "SQL Developper"
 collection: experience
-type: ""
 permalink: /experience/SQL developper
 venue: 'Munchy Bytes'
 date: 2018-09-01
