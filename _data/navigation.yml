@@ -3,6 +3,11 @@ main:
       
   # - title: "Portfolio"
   #  url: /portfolio
+  - title: "Experience"
+    url: /experience/
+
+  - title: "Educataion"
+    url: /education/
 
   - title: "Certifications"
     url: /certifications/
