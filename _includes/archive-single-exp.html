@@ -1,3 +1,17 @@
+{% include base_path %}
+
+{% if experience.header.teaser %}
+  {% capture teaser %}{{ experience.header.teaser }}{% endcapture %}
+{% else %}
+  {% assign teaser = site.teaser %}
+{% endif %}
+
+{% if experience.id %}
+  {% assign title = experience.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = experience.title %}
+{% endif %}
+
 <div class="list__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     {% if experience.teaser %}
