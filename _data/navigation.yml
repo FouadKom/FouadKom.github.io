@@ -1,16 +1,16 @@
 # main links links
 main:
   - title: "CV"
-    url: /cv/
+    url: /_pages/cv.md
     
   - title: "Portfolio"
-    url: /portfolio/
+    url: /_portfolio/portfolio.md
 
   - title: "Certifications"
-    url: /certifications/
+    url: /_certifications/certifications.md
 
   - title: "Projects"
-    url: /projects/
+    url: /_projects/projects.md
    
   - title: "Publications"
     url: /publications/
