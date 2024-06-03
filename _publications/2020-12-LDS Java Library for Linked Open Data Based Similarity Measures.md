@@ -1,7 +1,7 @@
 ---
 title: "LDS: Java Library for Linked Open Data Based Similarity Measures"
 collection: publications
-permalink: /publication/2020-12-LDS: Java Library for Linked Open Data Based Similarity Measures
+permalink: /publication/2020-12-LDS Java Library for Linked Open Data Based Similarity Measures
 excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
 date: 2020-12
 venue: '2020 IEEE/WIC/ACM International Joint Conference on Web Intelligence and Intelligent Agent Technology (WI-IAT)'
