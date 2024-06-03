@@ -24,7 +24,7 @@ author_profile: true
 ***
 
 <h1>Data Analysis/Engineering</h1>
-{% assign data_certs = site.certifications | where: "category", "data" %}
+{% assign data_certs = site.certifications | where: "category", "dataEnginering" %}
 {% for certification in data_certs %}
   {% include archive-single-certs.html certification=certification %}
 {% endfor %}
