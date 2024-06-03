@@ -1,6 +1,6 @@
-<div class="{{ include.type | default: "list" }}__item">
+<div class="list__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    {% if include.type == "grid" and experience.teaser %}
+    {% if experience.teaser %}
       <div class="archive__item-teaser">
         <img src=
           {% if experience.teaser contains "://" %}
@@ -19,7 +19,7 @@
         <a href="{{ base_path }}{{ experience.url }}" rel="permalink">{{ experience.title }}</a>
       {% endif %}
     </h2>
-    
+
     {% if experience.read_time %}
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {{ experience.read_time }} min read</p>
     {% endif %}
