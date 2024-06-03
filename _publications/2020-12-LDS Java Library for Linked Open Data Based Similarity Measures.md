@@ -3,7 +3,7 @@ title: "LDS: Java Library for Linked Open Data Based Similarity Measures"
 collection: publications
 permalink: /publication/2020-12-LDS Java Library for Linked Open Data Based Similarity Measures
 excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
-date: 2020-12
+date: 2020-12-01
 venue: '2020 IEEE/WIC/ACM International Joint Conference on Web Intelligence and Intelligent Agent Technology (WI-IAT)'
 citation: 'Komeiha, Fouad & Cheniki, Nasredine & Sam, Yacine & Jaber, Ali & Messai, Nizar. (2020). LDS: Java Library for Linked Open Data Based Similarity Measures. 476-481. 10.1109/WIIAT50758.2020.00071. '
 ---
