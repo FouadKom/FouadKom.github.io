@@ -1,3 +1,10 @@
+---
+layout: archive
+title: "Education"
+permalink: /education/
+author_profile: true
+---
+
 ## Education
 
 ### Doctor of Philosophy - PhD, Computer Science
