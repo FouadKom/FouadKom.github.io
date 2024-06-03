@@ -1,4 +1,3 @@
----
 title: "Lecturer, M2 Complementary Skills in Computer Science (CCI)"
 collection: experience
 type: ""
@@ -6,9 +5,13 @@ permalink: /experience/Lecturer
 venue: "University of Tours"
 date: 2023-09-01
 location: "Tours, France"
----
+excerpt: ""
+details:
+  - "In-depth teaching of fundamental principles of Java programming, including the design of general algorithms and basic Java programming."
+  - "Guidance of students in using Java data structures for efficient data manipulation and program performance optimization."
+  - "Experience in teaching web development using Java Enterprise Edition (JEE) for creating dynamic and interactive web applications."
+  - "Training students in integrating complementary technologies such as XML for data manipulation and storage."
+URL: ""
+read_time: 
+citation: ""
 
-- In-depth teaching of fundamental principles of Java programming, including the design of general algorithms and basic Java programming.
-- Guidance of students in using Java data structures for efficient data manipulation and program performance optimization.
-- Experience in teaching web development using Java Enterprise Edition (JEE) for creating dynamic and interactive web applications.
-- Training students in integrating complementary technologies such as XML for data manipulation and storage.
