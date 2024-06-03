@@ -7,6 +7,6 @@ author_profile: true
 
 {% include base_path %}
 
-{% for post in site.experience reversed %}
-  {% include archive-single-exp.html experience=experience %}
+{% for certification in cybersecurity_certs %}
+  {% include archive-single-certs.html certification=certification %}
 {% endfor %}
