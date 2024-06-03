@@ -13,8 +13,6 @@ author_profile: true
 {% endfor %}
 -->
 
-## Experience
-
 ### Temporary Lecturer and Research Assistant
 **Université de Tours**  
 *September 2021 - August 2023 (2 years)*  
@@ -25,6 +23,8 @@ Tours, France
 - Guidance of students in using Java data structures for efficient data manipulation and program performance optimization.
 - Experience in teaching web development using Java Enterprise Edition (JEE) for creating dynamic and interactive web applications.
 - Training students in integrating complementary technologies such as XML for data manipulation and storage.
+
+***
 
 ### SQL Developer
 **Munchy Bytes**  
