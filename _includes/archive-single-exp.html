@@ -34,9 +34,9 @@
       {% endif %}
     </h2>
 
-    {% if experience.read_time %}
+    <!--{% if experience.read_time %}
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {{ experience.read_time }} min read</p>
-    {% endif %}
+    {% endif %}-->
 
     <p>Venue: <i>{{ experience.venue }}</i> on {{ experience.date | date: "%B %d, %Y" }}</p>
 
@@ -56,12 +56,12 @@
       </ul>
     {% endif %}
 
-    {% if experience.citation and experience.documenturl %}
+    <!--{% if experience.citation and experience.documenturl %}
       <p>Recommended citation: {{ experience.citation }}<br /><a href="{{ experience.documenturl }}">Download Experience Document</a></p>
     {% elsif experience.citation %}
       <p>Recommended citation: {{ experience.citation }}</p>
     {% elsif experience.documenturl %}
       <p><a href="{{ experience.documenturl }}">Download Experience Document</a></p>
-    {% endif %}
+    {% endif %}-->
   </article>
 </div>
