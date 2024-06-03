@@ -20,4 +20,6 @@ I'm interested in **Cybersecurity**, **Machine Learning** and **Data** with seve
 
 # Selected Experience
 
-I have two years of In-depth experience in teaching fundamental principles of Java programming, as well as web development using Java Enterprise Edition (JEE) for creating dynamic and interactive web applications. I also have couple of years of experience in working with Microsoft SQL Server databases and data integration using SQL Server Integration Service.
+I have two years of In-depth experience in teaching fundamental principles of Java programming, as well as web development using Java Enterprise Edition (JEE) for creating dynamic and interactive web applications. 
+
+I also have couple of years of experience in working with Microsoft SQL Server databases and data integration using SQL Server Integration Service.
