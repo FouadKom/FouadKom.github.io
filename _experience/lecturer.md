@@ -1,7 +1,6 @@
 ---
 title: "Lecturer, M2 Complementary Skills in Computer Science (CCI)"
 collection: experience
-type: ""
 permalink: /experience/Lecturer
 venue: "University of Tours"
 date: 2023-09-01
