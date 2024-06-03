@@ -3,9 +3,9 @@ title: "SQL Developper"
 collection: experience
 type: ""
 permalink: /experience/SQL developper
-venue: "Munchy Bytes"
+venue: 'Munchy Bytes'
 date: 2018-09-01
-location: "Beirut, Lebanon"
+location: 'Beirut, Lebanon'
 details:
 - Designing and implementing SQL Server databases to meet specific client requirements.
 - Configuring and scheduling SSIS jobs to automate data integration processes.
