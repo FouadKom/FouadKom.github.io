@@ -1,12 +1,12 @@
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    {% if include.type == "grid" and teaser %}
+    {% if include.type == "grid" and experience.teaser %}
       <div class="archive__item-teaser">
         <img src=
-          {% if teaser contains "://" %}
-            "{{ teaser }}"
+          {% if experience.teaser contains "://" %}
+            "{{ experience.teaser }}"
           {% else %}
-            "{{ teaser | prepend: "/images/" | prepend: base_path }}"
+            "{{ experience.teaser | prepend: "/images/" | prepend: base_path }}"
           {% endif %}
           alt="">
       </div>
@@ -21,7 +21,7 @@
     </h2>
     
     {% if experience.read_time %}
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {{ experience.read_time }} min read</p>
     {% endif %}
 
     <p>Venue: <i>{{ experience.venue }}</i> on {{ experience.date | date: "%B %d, %Y" }}</p>
@@ -30,18 +30,8 @@
       <p>Location: {{ experience.location }}</p>
     {% endif %}
 
-    {% if experience.excerpt and site.read_more != 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description">{{ experience.excerpt | markdownify }}</p>
-    {% elsif experience.excerpt and site.read_more == 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description"><p>{{ experience.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ experience.url }}" rel="permalink"> Read more</a></strong></p></p>
-    {% endif %}
-
-    {% if experience.citation and experience.documenturl %}
-      <p>Recommended citation: {{ experience.citation }}<br /><a href="{{ experience.documenturl }}">Download Experience Document</a></p>
-    {% elsif experience.citation %}
-      <p>Recommended citation: {{ experience.citation }}</p>
-    {% elsif experience.documenturl %}
-      <p><a href="{{ experience.documenturl }}">Download Experience Document</a></p>
+    {% if experience.excerpt %}
+      <p class="archive__item-excerpt" itemprop="description">{{ experience.excerpt }}</p>
     {% endif %}
 
     {% if experience.details %}
@@ -52,6 +42,12 @@
       </ul>
     {% endif %}
 
+    {% if experience.citation and experience.documenturl %}
+      <p>Recommended citation: {{ experience.citation }}<br /><a href="{{ experience.documenturl }}">Download Experience Document</a></p>
+    {% elsif experience.citation %}
+      <p>Recommended citation: {{ experience.citation }}</p>
+    {% elsif experience.documenturl %}
+      <p><a href="{{ experience.documenturl }}">Download Experience Document</a></p>
+    {% endif %}
   </article>
 </div>
-
