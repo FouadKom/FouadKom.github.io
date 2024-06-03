@@ -5,14 +5,6 @@ permalink: /experience/
 author_profile: true
 ---
 
-<!--
-{% include base_path %}
-
-{% for post in site.experience reversed %}
-  {% include archive-single-exp.html %}
-{% endfor %}
--->
-
 ### Temporary Lecturer and Research Assistant
 **Université de Tours**  
 *September 2021 - August 2023 (2 years)*  
