@@ -7,6 +7,6 @@ author_profile: true
 
 {% include base_path %}
 
-{% for post in site.certifications reversed %}
-  {% include archive-single-certs.html %}
+{% for certification in site.certifications reversed %}
+  {% include archive-single.html certification=certification %}
 {% endfor %}
