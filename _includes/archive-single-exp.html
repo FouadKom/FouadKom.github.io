@@ -23,8 +23,7 @@
     </h2>
 
     <div class="archive__item-details">
-      <p><i>{{ experience.venue }}</i></p>
-      <p>Date: {{ experience.from }} -
+      <p><i>{{ experience.venue }}</i> {{ experience.from }} -
         {% if experience.to %}
           {{ experience.to }}
         {% else %}
