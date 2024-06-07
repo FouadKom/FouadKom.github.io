@@ -1,27 +1,30 @@
 ---
-title: "Teaching experience 3"
+title: "Lecturer"
 collection: experience
 type: "Undergraduate course"
-permalink: /teaching/2014-spring-teaching-1
+permalink: /experience/teaching3
 venue: "University of Tours"
 from: 2023
 to: 
 location: "Tours, France"
 details:
-  - "In-depth teaching of fundamental principles of Java programming, including the design of general algorithms and basic Java programming."
-  - "Guidance of students in using Java data structures for efficient data manipulation and program performance optimization."
-  - "Experience in teaching web development using Java Enterprise Edition (JEE) for creating dynamic and interactive web applications."
-  - "Training students in integrating complementary technologies such as XML for data manipulation and storage."
 URL: ""
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
-
-Heading 1
+M2 Competence Complementere en Informatique, Faculty des Sciences est Techniques
 ======
+Modules taught:
+- Introduction to Java Programming
+- Advanced algorithms, data Structures and Complexity
+- Dynamic Web Pages using Java Enterprise Edition
+- XML
 
-Heading 2
 ======
+Duties:
+- In-depth teaching of fundamental principles of Java programming, including the design of general algorithms and basic Java programming.
+- Guidance of students in using Java data structures for efficient data manipulation and program performance optimization.
+- Teaching web development using Java Enterprise Edition (JEE) for creating dynamic and interactive web applications.
+- Training students in integrating complementary technologies such as XML for data manipulation and storage.
 
 Heading 3
 ======
