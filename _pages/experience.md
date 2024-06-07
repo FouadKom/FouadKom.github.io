@@ -7,8 +7,9 @@ author_profile: true
 
 {% include base_path %}
 
-{% for experience in site.experience %}
+{% assign sorted_experiences = site.experience | sort: 'to' | reverse %}
+
+{% for experience in sorted_experiences %}
   {% include archive-single-exp.html %}
 {% endfor %}
-
 
