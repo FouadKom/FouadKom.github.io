@@ -3,7 +3,8 @@ title: "SQL Developper"
 collection: experience
 permalink: /experience/SQL developper
 venue: 'Munchy Bytes'
-date: 2018-09-01
+from: 2016
+to: 2018
 location: 'Beirut, Lebanon'
 details:
 - Designing and implementing SQL Server databases to meet specific client requirements.
