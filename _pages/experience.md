@@ -5,4 +5,10 @@ permalink: /experience/
 author_profile: true
 ---
 
+{% include base_path %}
+
+{% for experience in site.experience %}
+  {% include archive-experience.html %}
+{% endfor %}
+
 
