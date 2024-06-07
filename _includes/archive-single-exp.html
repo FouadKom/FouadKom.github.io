@@ -15,48 +15,60 @@
     {% endif %}
 
     <h2 class="archive__item-title" itemprop="headline">
+      <a href="javascript:void(0)" onclick="toggleDetails('{{ experience.permalink | replace: '/', '-' }}')">{{ experience.title }}</a>
       {% if experience.URL %}
-        <a href="{{ experience.URL }}">{{ experience.title }}</a> <a href="{{ base_path }}{{ experience.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
-      {% else %}
-        <a href="{{ base_path }}{{ experience.url }}" rel="permalink">{{ experience.title }}</a>
+        <a href="{{ experience.URL }}" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i><span class="sr-only">External Link</span></a>
       {% endif %}
+      <a href="{{ base_path }}{{ experience.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
     </h2>
 
-    {% if experience.read_time %}
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {{ experience.read_time }} min read</p>
-    {% endif %}
-
-    <p><i>{{ experience.venue }}</i>
-      {{ experience.from }} -
-      {% if experience.to %}
-        {{ experience.to }}
-      {% else %}
-        present
+    <div id="{{ experience.permalink | replace: '/', '-' }}" class="archive__item-details" style="display:none;">
+      {% if experience.read_time %}
+        <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {{ experience.read_time }} min read</p>
       {% endif %}
-    </p>
+      
+      <p><i>{{ experience.venue }}</i> {{ experience.from }} -
+        {% if experience.to %}
+          {{ experience.to }}
+        {% else %}
+          present
+        {% endif %}
+      </p>
 
-    {% if experience.location %}
-      <p>{{ experience.location }}</p>
-    {% endif %}
+      {% if experience.location %}
+        <p>{{ experience.location }}</p>
+      {% endif %}
 
-    {% if experience.excerpt %}
-      <p class="archive__item-excerpt" itemprop="description">{{ experience.excerpt }}</p>
-    {% endif %}
+      {% if experience.details %}
+        <ul>
+          {% for detail in experience.details %}
+            <li>{{ detail }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
 
-    {% if experience.details %}
-      <ul>
-        {% for detail in experience.details %}
-          <li>{{ detail }}</li>
-        {% endfor %}
-      </ul>
-    {% endif %}
+      <div class="archive__item-excerpt" itemprop="description">
+        {{ experience.content | markdownify }}
+      </div>
 
-    {% if experience.citation and experience.documenturl %}
-      <p>Recommended citation: {{ experience.citation }}<br /><a href="{{ experience.documenturl }}">Download Experience Document</a></p>
-    {% elsif experience.citation %}
-      <p>Recommended citation: {{ experience.citation }}</p>
-    {% elsif experience.documenturl %}
-      <p><a href="{{ experience.documenturl }}">Download Experience Document</a></p>
-    {% endif %}
+      {% if experience.citation and experience.documenturl %}
+        <p>Recommended citation: {{ experience.citation }}<br /><a href="{{ experience.documenturl }}">Download Experience Document</a></p>
+      {% elsif experience.citation %}
+        <p>Recommended citation: {{ experience.citation }}</p>
+      {% elsif experience.documenturl %}
+        <p><a href="{{ experience.documenturl }}">Download Experience Document</a></p>
+      {% endif %}
+    </div>
   </article>
 </div>
+
+<script>
+  function toggleDetails(id) {
+    var element = document.getElementById(id);
+    if (element.style.display === "none") {
+      element.style.display = "block";
+    } else {
+      element.style.display = "none";
+    }
+  }
+</script>
