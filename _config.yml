@@ -38,7 +38,7 @@ author:
   googlescholar    : "https://scholar.google.com/citations?user=9VebkDsAAAAJ&hl=fr"
   researchgate     : "https://www.researchgate.net/profile/Fouad-Komeiha"
   #impactstory      : # URL
-  orcid            : "https://orcid.org/0000-0003-3224-8185"
+  #orcid            : "https://orcid.org/0000-0003-3224-8185"
   #semantic         : # URL
   #pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   
@@ -220,6 +220,9 @@ collections:
     output: true
     permalink: /:collection/:path/
   projects:
+    output: true
+    permalink: /:collection/:path/
+  teaching:
     output: true
     permalink: /:collection/:path/
 
