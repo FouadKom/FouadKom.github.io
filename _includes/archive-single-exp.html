@@ -1,16 +1,37 @@
-{% include base_path %}
+{% capture from_date %}
+  {% if experience.from %}
+    {% assign from_date_parts = experience.from | split: "-" %}
+    {% case from_date_parts.size %}
+      {% when 3 %}
+        {{ experience.from | date: "%Y%m%d" }}
+      {% when 2 %}
+        {{ experience.from | date: "%Y%m" }}
+      {% when 1 %}
+        {{ experience.from | date: "%Y" }}
+    {% endcase %}
+  {% else %}
+    00000000
+  {% endif %}
+{% endcapture %}
 
-{% if experience.header.teaser %}
-  {% capture teaser %}{{ experience.header.teaser }}{% endcapture %}
-{% else %}
-  {% assign teaser = site.teaser %}
-{% endif %}
+{% capture to_date %}
+  {% if experience.to %}
+    {% assign to_date_parts = experience.to | split: "-" %}
+    {% case to_date_parts.size %}
+      {% when 3 %}
+        {{ experience.to | date: "%Y%m%d" }}
+      {% when 2 %}
+        {{ experience.to | date: "%Y%m" }}
+      {% when 1 %}
+        {{ experience.to | date: "%Y" }}
+    {% endcase %}
+  {% else %}
+    {% assign to_date = "99999999" %}
+  {% endif %}
+{% endcapture %}
 
-{% if certification.id %}
-  {% assign title = experience.title | markdownify | remove: "<p>" | remove: "</p>" %}
-{% else %}
-  {% assign title = experience.title %}
-{% endif %}
+{% assign experience.from_date = from_date %}
+{% assign experience.to_date = to_date %}
 
 <div class="list__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
@@ -38,10 +59,7 @@
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {{ experience.read_time }} min read</p>
     {% endif %}
 
-    <p><i>{{ experience.venue }}</i>
-      {% assign from_date_parts = experience.from | split: "-" %}
-      {% assign to_date_parts = experience.to | split: "-" %}
-
+    <p>Venue: <i>{{ experience.venue }}</i>
       {% case from_date_parts.size %}
         {% when 3 %}
           {{ experience.from | date: "%B %d, %Y" }}
@@ -65,9 +83,8 @@
       {% endif %}
     </p>
 
-
     {% if experience.location %}
-      <p>{{ experience.location }}</p>
+      <p>Location: {{ experience.location }}</p>
     {% endif %}
 
     {% if experience.excerpt %}
