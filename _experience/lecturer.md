@@ -3,8 +3,8 @@ title: "Lecturer, M2 Complementary Skills in Computer Science (CCI)"
 collection: experience
 permalink: /experience/Lecturer
 venue: "University of Tours"
-from: 2021-09-01
-to: 2023-08-31
+from: 2021
+to: 2023
 location: "Tours, France"
 details:
   - "In-depth teaching of fundamental principles of Java programming, including the design of general algorithms and basic Java programming."
