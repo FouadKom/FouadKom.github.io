@@ -38,17 +38,36 @@
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {{ experience.read_time }} min read</p>
     {% endif %}
 
-    <p>Venue: <i>{{ experience.venue }}</i> {{ experience.from | date: "%B %d, %Y" }} - 
+    <p><i>{{ experience.venue }}</i>
+      {% assign from_date_parts = experience.from | split: "-" %}
+      {% assign to_date_parts = experience.to | split: "-" %}
+
+      {% case from_date_parts.size %}
+        {% when 3 %}
+          {{ experience.from | date: "%B %d, %Y" }}
+        {% when 2 %}
+          {{ experience.from | date: "%B %Y" }}
+        {% when 1 %}
+          {{ experience.from | date: "%Y" }}
+      {% endcase %}
+      -
       {% if experience.to %}
-        {{ experience.to | date: "%B %d, %Y" }}
+        {% case to_date_parts.size %}
+          {% when 3 %}
+            {{ experience.to | date: "%B %d, %Y" }}
+          {% when 2 %}
+            {{ experience.to | date: "%B %Y" }}
+          {% when 1 %}
+            {{ experience.to | date: "%Y" }}
+        {% endcase %}
       {% else %}
         present
       {% endif %}
-      </p>
+    </p>
 
 
     {% if experience.location %}
-      <p>Location: {{ experience.location }}</p>
+      <p>{{ experience.location }}</p>
     {% endif %}
 
     {% if experience.excerpt %}
