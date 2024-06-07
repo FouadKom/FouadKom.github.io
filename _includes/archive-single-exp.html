@@ -1,37 +1,5 @@
 {% include base_path %}
 
-{% assign from_date_parts = experience.from | split: "-" %}
-{% assign to_date_parts = experience.to | split: "-" %}
-
-{% capture from_date %}
-  {% case from_date_parts.size %}
-    {% when 3 %}
-      {{ experience.from | date: "%Y%m%d" }}
-    {% when 2 %}
-      {{ experience.from | append: "-01" | date: "%Y%m" }}
-    {% when 1 %}
-      {{ experience.from | append: "-01-01" | date: "%Y" }}
-  {% endcase %}
-{% endcapture %}
-
-{% capture to_date %}
-  {% if experience.to %}
-    {% case to_date_parts.size %}
-      {% when 3 %}
-        {{ experience.to | date: "%Y%m%d" }}
-      {% when 2 %}
-        {{ experience.to | append: "-01" | date: "%Y%m" }}
-      {% when 1 %}
-        {{ experience.to | append: "-01-01" | date: "%Y" }}
-    {% endcase %}
-  {% else %}
-    99999999
-  {% endif %}
-{% endcapture %}
-
-{% assign experience.from_date = from_date %}
-{% assign experience.to_date = to_date %}
-
 <div class="list__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     {% if experience.teaser %}
@@ -59,24 +27,9 @@
     {% endif %}
 
     <p><i>{{ experience.venue }}</i>
-      {% case from_date_parts.size %}
-        {% when 3 %}
-          {{ experience.from | date: "%B %d, %Y" }}
-        {% when 2 %}
-          {{ experience.from | date: "%B %Y" }}
-        {% when 1 %}
-          {{ experience.from | date: "%Y" }}
-      {% endcase %}
-      -
+      {{ experience.from }} -
       {% if experience.to %}
-        {% case to_date_parts.size %}
-          {% when 3 %}
-            {{ experience.to | date: "%B %d, %Y" }}
-          {% when 2 %}
-            {{ experience.to | date: "%B %Y" }}
-          {% when 1 %}
-            {{ experience.to | date: "%Y" }}
-        {% endcase %}
+        {{ experience.to }}
       {% else %}
         present
       {% endif %}
