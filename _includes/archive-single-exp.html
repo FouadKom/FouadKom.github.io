@@ -38,7 +38,14 @@
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {{ experience.read_time }} min read</p>
     {% endif %}
 
-    <p>Venue: <i>{{ experience.venue }}</i> from {{ experience.from | date: "%B %d, %Y" }} to {{ experience.to | date: "%B %d, %Y" }}</p>
+    <p>Venue: <i>{{ experience.venue }}</i> {{ experience.from | date: "%B %d, %Y" }} - 
+      {% if experience.to %}
+        {{ experience.to | date: "%B %d, %Y" }}
+      {% else %}
+        present
+      {% endif %}
+      </p>
+
 
     {% if experience.location %}
       <p>Location: {{ experience.location }}</p>
