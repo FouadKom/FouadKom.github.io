@@ -2,7 +2,7 @@
 main:
       
   - title: "teaching"
-   url: /teaching/
+    url: /teaching/
   
   - title: "Experience"
     url: /experience/
