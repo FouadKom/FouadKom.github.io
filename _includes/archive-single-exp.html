@@ -22,42 +22,44 @@
       <a href="{{ base_path }}{{ experience.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
     </h2>
 
-    <div id="{{ experience.permalink | replace: '/', '-' }}" class="archive__item-details" style="display:none;">
-      {% if experience.read_time %}
-        <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {{ experience.read_time }} min read</p>
-      {% endif %}
-      
-      <p><i>{{ experience.venue }}</i> {{ experience.from }} -
+    <div class="archive__item-details">
+      <p><i>{{ experience.venue }}</i></p>
+      <p>Date: {{ experience.from }} -
         {% if experience.to %}
           {{ experience.to }}
         {% else %}
           present
         {% endif %}
       </p>
-
       {% if experience.location %}
         <p>{{ experience.location }}</p>
       {% endif %}
 
-      {% if experience.details %}
-        <ul>
-          {% for detail in experience.details %}
-            <li>{{ detail }}</li>
-          {% endfor %}
-        </ul>
-      {% endif %}
+      <div id="{{ experience.permalink | replace: '/', '-' }}" style="display:none;">
+        {% if experience.read_time %}
+          <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {{ experience.read_time }} min read</p>
+        {% endif %}
+        
+        {% if experience.details %}
+          <ul>
+            {% for detail in experience.details %}
+              <li>{{ detail }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
 
-      <div class="archive__item-excerpt" itemprop="description">
-        {{ experience.content | markdownify }}
+        <div class="archive__item-excerpt" itemprop="description">
+          {{ experience.content | markdownify }}
+        </div>
+
+        {% if experience.citation and experience.documenturl %}
+          <p>Recommended citation: {{ experience.citation }}<br /><a href="{{ experience.documenturl }}">Download Experience Document</a></p>
+        {% elsif experience.citation %}
+          <p>Recommended citation: {{ experience.citation }}</p>
+        {% elsif experience.documenturl %}
+          <p><a href="{{ experience.documenturl }}">Download Experience Document</a></p>
+        {% endif %}
       </div>
-
-      {% if experience.citation and experience.documenturl %}
-        <p>Recommended citation: {{ experience.citation }}<br /><a href="{{ experience.documenturl }}">Download Experience Document</a></p>
-      {% elsif experience.citation %}
-        <p>Recommended citation: {{ experience.citation }}</p>
-      {% elsif experience.documenturl %}
-        <p><a href="{{ experience.documenturl }}">Download Experience Document</a></p>
-      {% endif %}
     </div>
   </article>
 </div>
