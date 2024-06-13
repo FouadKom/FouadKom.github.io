@@ -13,3 +13,13 @@ details:
 - requirements and ensure their effective implementation using SSIS.
 URL: ""
 ---
+
+# Responsibilities:
+- Managing Databases and ensuring the proper backups are completed and regularly being executed.
+- Writing, debugging, and editing SSIS jobs used for data integrations.
+- Writing, debugging, and editing necessary stored procedures for task automations.
+
+# Technologies Used:
+- Microsoft SQL Server
+- Microsoft SQL Server Integration Service
+- VB.net
