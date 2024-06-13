@@ -14,6 +14,12 @@ details:
 URL: ""
 ---
 
+# Responsibilities:
+- Teaching the needed modules with edits on them if necessary.
+- Managing the pase of courses and modules to cover the most important topics, including labs.
+- Designing and writing necessary tests for students.
+- Designing and managing projects to ensure complete understanding of taught modules.
+
 # Modules Taught:
 - Algoriths and Data Structres (Java)
 - Data Structures and Complixity (Java)
@@ -24,3 +30,4 @@ URL: ""
 - Eclipse IDE with JDK 19
 - Apache Tomacat
 - MySQL
+- Oxygen XML Editor
