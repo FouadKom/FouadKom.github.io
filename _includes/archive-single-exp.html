@@ -34,7 +34,7 @@
         <p>{{ experience.location }}</p>
       {% endif %}
 
-      <div id="{{ experience.permalink | replace: '/', '-' }}" style="display:none;">
+      <div id="{{ experience.permalink | replace: '/', '-' }}" style="display:block;">
         {% if experience.read_time %}
           <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {{ experience.read_time }} min read</p>
         {% endif %}
