@@ -13,3 +13,9 @@ details:
   - "Training students in integrating complementary technologies such as XML for data manipulation and storage."
 URL: ""
 ---
+
+## Modules Taught:
+- Algoriths and Data Structres (Java)
+- Data Structures and Complixity (Java)
+- Java Enterprise Edition (JEE) Programming
+- Application Developement (XML)
