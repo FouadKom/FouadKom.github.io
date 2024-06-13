@@ -14,7 +14,7 @@ details:
 URL: ""
 ---
 
-## Modules Taught:
+# Modules Taught:
 - Algoriths and Data Structres (Java)
 - Data Structures and Complixity (Java)
 - Java Enterprise Edition (JEE) Programming
