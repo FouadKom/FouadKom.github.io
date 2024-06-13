@@ -19,3 +19,8 @@ URL: ""
 - Data Structures and Complixity (Java)
 - Java Enterprise Edition (JEE) Programming
 - Application Developement (XML)
+
+# Technologies Used:
+- Eclipse IDE with JDK 19
+- Apache Tomacat
+- MySQL
