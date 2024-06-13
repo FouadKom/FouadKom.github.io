@@ -10,5 +10,5 @@ author_profile: true
 {% assign sorted_education = site.education | sort: 'from' | reverse %}
 
 {% for education in sorted_education %}
-  {% include archive-single-exp.html %}
+  {% include archive-single-edu.html %}
 {% endfor %}
