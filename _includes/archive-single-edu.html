@@ -1,0 +1,95 @@
+---
+layout: archive
+title: "Education"
+permalink: /education/
+author_profile: true
+---
+
+{% include base_path %}
+
+<div class="education-list">
+  {% for education in site.data.education %}
+    <div class="list__item">
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <h2 class="archive__item-title" itemprop="headline">
+          <a href="javascript:void(0)" onclick="toggleDetails('{{ education.title | slugify }}')">{{ education.title }}</a>
+          {% if education.URL %}
+            <a href="{{ education.URL }}" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i><span class="sr-only">External Link</span></a>
+          {% endif %}
+          <a href="{{ base_path }}{{ education.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+        </h2>
+
+        <div class="archive__item-details">
+          <p><i>{{ education.venue }}</i> {{ education.from }} - 
+            {% if education.to %}
+              {{ education.to }}
+            {% else %}
+              present
+            {% endif %}
+          </p>
+          {% if education.location %}
+            <p>{{ education.location }}</p>
+          {% endif %}
+
+          <div id="{{ education.title | slugify }}" style="display:none;">
+            {% if education.details.thesis_title %}
+              <h3>Thesis Title:</h3>
+              <p>{{ education.details.thesis_title }}</p>
+              <h3>Thesis Directors:</h3>
+              <ul>
+                {% for director in education.details.directors %}
+                  <li>
+                    {% if director.url %}
+                      <a href="{{ director.url }}" target="_blank">{{ director.name }}</a>
+                    {% else %}
+                      {{ director.name }}
+                    {% endif %}
+                  </li>
+                {% endfor %}
+              </ul>
+              <h3>Thesis Co-directors:</h3>
+              <ul>
+                {% for co_director in education.details.co_directors %}
+                  <li>
+                    {% if co_director.url %}
+                      <a href="{{ co_director.url }}" target="_blank">{{ co_director.name }}</a>
+                    {% else %}
+                      {{ co_director.name }}
+                    {% endif %}
+                  </li>
+                {% endfor %}
+              </ul>
+              <h3>Research Objective:</h3>
+              <p>{{ education.details.research_objective }}</p>
+            {% endif %}
+            
+            {% if education.details.courses %}
+              <h3>Courses Include:</h3>
+              <ul>
+                {% for course in education.details.courses %}
+                  <li>{{ course }}</li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+            
+            {% if education.details.rank %}
+              <h3>Rank:</h3>
+              <p>{{ education.details.rank }}</p>
+            {% endif %}
+          </div>
+        </div>
+      </article>
+    </div>
+  {% endfor %}
+</div>
+
+<script>
+  function toggleDetails(id) {
+    var element = document.getElementById(id);
+    if (element.style.display === "none" || element.style.display === "") {
+      element.style.display = "block";
+    } else {
+      element.style.display = "none";
+    }
+  }
+</script>
