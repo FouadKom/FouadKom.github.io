@@ -7,15 +7,14 @@ from: 2021
 to: 2023
 location: "Tours, France"
 details:
-  - "In-depth teaching of fundamental principles of Java programming, including the design of general algorithms and basic Java programming."
-  - "Guidance of students in using Java data structures for efficient data manipulation and program performance optimization."
-  - "Experience in teaching web development using Java Enterprise Edition (JEE) for creating dynamic and interactive web applications."
-  - "Training students in integrating complementary technologies such as XML for data manipulation and storage."
 URL: ""
 ---
 
 # Key Responsibilities:
-- <span style="font-size: 17px;">  Teaching the needed modules with edits on them if necessary. </span>
+- <span style="font-size: 17px;">  Teaching of fundamental principles of Java programming, including the design of general algorithms and basic Java programming. </span>
+- <span style="font-size: 17px;"> Guidance of students in using Java data structures for efficient data manipulation and program performance optimization. </span>
+- <span style="font-size: 17px;"> Teaching web development using Java Enterprise Edition (JEE) for creating dynamic and interactive web applications. </span>
+- <span style="font-size: 17px;"> Training students in integrating complementary technologies such as XML for data manipulation and storage. </span>
 - <span style="font-size: 17px;">  Managing the pase of courses and modules to cover the most important topics, including labs. </span>
 - <span style="font-size: 17px;">  Designing and writing necessary tests for students. </span>
 - <span style="font-size: 17px;">  Designing and managing projects to ensure complete understanding of taught modules. </span>
