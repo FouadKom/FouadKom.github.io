@@ -27,20 +27,22 @@
           {{ experience.content | markdownify }}
         </div>
 
-        <div id="{{ include.education.title | slugify }}" style="display:block;">
-          {% if include.education.details %}
-            <h3>Details:</h3>
-            <ul>
-              {% for detail in include.education.details.courses %}
-                <li>{{ detail }}</li>
-              {% endfor %}
-            </ul>
-          {% endif %}
+        <div id="{{ education.permalink | replace: '/', '-' }}" style="display:block;">
+        {% if education.read_time %}
+          <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {{ education.read_time }} min read</p>
+        {% endif %}
+        
+        {% if education.details %}
+          <ul>
+            {% for detail in education.details %}
+              <li>{{ detail }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+
+        <div class="archive__item-excerpt" itemprop="description">
+          {{ education.content | markdownify }}
         </div>
-      </div>
-    </article>
-  </div>
-</div>
 
 <script>
   function toggleDetails(id) {
