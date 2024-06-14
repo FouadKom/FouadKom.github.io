@@ -7,17 +7,15 @@ from: 2016
 to: 2018
 location: 'Beirut, Lebanon'
 details:
-- Designing and implementing SQL Server databases to meet specific client requirements.
-- Configuring and scheduling SSIS jobs to automate data integration processes.
-- Collaborating with business teams to understand data integration
-- requirements and ensure their effective implementation using SSIS.
 URL: ""
 ---
 
 # Key Responsibilities:
+- <span style="font-size: 17px;"> Designing and implementing SQL Server databases to meet specific client requirements. </span>
 - <span style="font-size: 17px;"> Managing Databases and ensuring the proper backups are completed and regularly being executed. </span>
-- <span style="font-size: 17px;"> Writing, debugging, and editing SSIS jobs used for data integrations.
-- <span style="font-size: 17px;"> Writing, debugging, and editing necessary stored procedures for task automations.
+- <span style="font-size: 17px;"> Configuring and scheduling SSIS jobs to automate data integration processes. </span>
+- <span style="font-size: 17px;"> Writing, debugging, and editing SSIS jobs used for data integrations. </span>
+- <span style="font-size: 17px;"> Writing, debugging, and editing necessary stored procedures for task automations. </span>
 
 # Technologies Used:
 - <span style="font-size: 17px;"> Microsoft SQL Server </span>
