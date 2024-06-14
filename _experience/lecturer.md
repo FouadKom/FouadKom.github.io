@@ -20,7 +20,7 @@ URL: ""
 - <span style="font-size: 17px;">  Designing and managing projects to ensure complete understanding of taught modules. </span>
 
 # Modules Taught:
-- <span style="font-size: 17px;">  Algoriths and Data Structres (Java) </span>
+- <span style="font-size: 17px;">  Algorithms and Data Structres (Java) </span>
 - <span style="font-size: 17px;">  Data Structures and Complixity (Java) </span>
 - <span style="font-size: 17px;">  Java Enterprise Edition (JEE) Programming </span>
 - <span style="font-size: 17px;">  Application Developement (XML) </span>
