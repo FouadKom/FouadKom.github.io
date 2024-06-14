@@ -14,12 +14,12 @@ details:
 URL: ""
 ---
 
-# Responsibilities:
-- Managing Databases and ensuring the proper backups are completed and regularly being executed.
-- Writing, debugging, and editing SSIS jobs used for data integrations.
-- Writing, debugging, and editing necessary stored procedures for task automations.
+# Key Responsibilities:
+- <span style="font-size: 17px;"> Managing Databases and ensuring the proper backups are completed and regularly being executed. </span>
+- <span style="font-size: 17px;"> Writing, debugging, and editing SSIS jobs used for data integrations.
+- <span style="font-size: 17px;"> Writing, debugging, and editing necessary stored procedures for task automations.
 
 # Technologies Used:
-- Microsoft SQL Server
-- Microsoft SQL Server Integration Service
-- VB.net
+- <span style="font-size: 17px;"> Microsoft SQL Server </span>
+- <span style="font-size: 17px;"> Microsoft SQL Server Integration Service </span>
+- <span style="font-size: 17px;"> VB.net </span>
