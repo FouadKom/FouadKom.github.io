@@ -1,72 +1,51 @@
 {% include base_path %}
 
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    {% if experience.teaser %}
-      <div class="archive__item-teaser">
-        <img src=
-          {% if experience.teaser contains "://" %}
-            "{{ experience.teaser }}"
+<div class="experience-list">
+  <div class="list__item">
+    <article class="archive__item">
+      <h2 class="archive__item-title" itemprop="headline">
+        <a href="javascript:void(0)" onclick="toggleDetails('{{ include.experience.title | slugify }}')">{{ include.experience.title }}</a>
+        {% if include.experience.URL %}
+          <a href="{{ include.experience.URL }}" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i><span class="sr-only">External Link</span></a>
+        {% endif %}
+        <a href="{{ base_path }}{{ include.experience.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+      </h2>
+
+      <div class="archive__item-details">
+        <p><i>{{ include.experience.venue }}</i> {{ include.experience.from }} - 
+          {% if include.experience.to %}
+            {{ include.experience.to }}
           {% else %}
-            "{{ experience.teaser | prepend: "/images/" | prepend: base_path }}"
+            present
           {% endif %}
-          alt="">
-      </div>
-    {% endif %}
-
-    <h2 class="archive__item-title" itemprop="headline">
-      <a href="javascript:void(0)" onclick="toggleDetails('{{ experience.permalink | replace: '/', '-' }}')">{{ experience.title }}</a>
-      {% if experience.URL %}
-        <a href="{{ experience.URL }}" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i><span class="sr-only">External Link</span></a>
-      {% endif %}
-      <a href="{{ base_path }}{{ experience.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
-    </h2>
-
-    <div class="archive__item-details">
-      <p><i>{{ experience.venue }}</i> {{ experience.from }} -
-        {% if experience.to %}
-          {{ experience.to }}
-        {% else %}
-          present
-        {% endif %}
-      </p>
-      {% if experience.location %}
-        <p>{{ experience.location }}</p>
-      {% endif %}
-
-      <div id="{{ experience.permalink | replace: '/', '-' }}" style="display:block;">
-        {% if experience.read_time %}
-          <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {{ experience.read_time }} min read</p>
-        {% endif %}
-        
-        {% if experience.details %}
-          <ul>
-            {% for detail in experience.details %}
-              <li>{{ detail }}</li>
-            {% endfor %}
-          </ul>
+        </p>
+        {% if include.experience.location %}
+          <p>{{ include.experience.location }}</p>
         {% endif %}
 
-        <div class="archive__item-excerpt" itemprop="description">
-          {{ experience.content | markdownify }}
+        <div id="{{ include.experience.title | slugify }}" style="display:none;">
+          {% assign excluded_keys = "title,collection,permalink,venue,from,to,location,URL,url" | split: ',' %}
+          
+          {% for key in include.experience %}
+            {% unless excluded_keys contains key %}
+              <h3>{{ key | capitalize }}</h3>
+              <ul>
+                {% for item in include.experience[key] %}
+                  <li>{{ item }}</li>
+                {% endfor %}
+              </ul>
+            {% endunless %}
+          {% endfor %}
         </div>
-
-        {% if experience.citation and experience.documenturl %}
-          <p>Recommended citation: {{ experience.citation }}<br /><a href="{{ experience.documenturl }}">Download Experience Document</a></p>
-        {% elsif experience.citation %}
-          <p>Recommended citation: {{ experience.citation }}</p>
-        {% elsif experience.documenturl %}
-          <p><a href="{{ experience.documenturl }}">Download Experience Document</a></p>
-        {% endif %}
       </div>
-    </div>
-  </article>
+    </article>
+  </div>
 </div>
 
 <script>
   function toggleDetails(id) {
     var element = document.getElementById(id);
-    if (element.style.display === "none") {
+    if (element.style.display === "none" || element.style.display === "") {
       element.style.display = "block";
     } else {
       element.style.display = "none";
