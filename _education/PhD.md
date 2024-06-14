@@ -28,7 +28,7 @@ Constructing A Semantic Similarity Calculation Framework Based on Linked Open Da
 Semantic Web for Recommendation Systems.
 
 # Thesis Director:
--  <span style="font-size: 20px;"> Dr. Ali Jaber </span>
+-  <span style="font-size: 50px;"> Dr. Ali Jaber </span>
 -  [Dr. Thomas Devogele](https://scholar.google.com/citations?user=dpiIzykAAAAJ&hl=fr)
 
 # Thesis Co-directors:
