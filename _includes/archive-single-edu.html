@@ -23,6 +23,10 @@
           <p>{{ include.education.location }}</p>
         {% endif %}
 
+        <div class="archive__item-excerpt" itemprop="description">
+          {{ experience.content | markdownify }}
+        </div>
+
         <div id="{{ include.education.title | slugify }}" style="display:block;">
           {% if include.education.details %}
             <h3>Details:</h3>
