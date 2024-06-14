@@ -14,20 +14,20 @@ details:
 URL: ""
 ---
 
-# Responsibilities:
-- Teaching the needed modules with edits on them if necessary.
-- Managing the pase of courses and modules to cover the most important topics, including labs.
-- Designing and writing necessary tests for students.
-- Designing and managing projects to ensure complete understanding of taught modules.
+# Key Responsibilities:
+- <span style="font-size: 17px;">  Teaching the needed modules with edits on them if necessary. </span>
+- <span style="font-size: 17px;">  Managing the pase of courses and modules to cover the most important topics, including labs. </span>
+- <span style="font-size: 17px;">  Designing and writing necessary tests for students. </span>
+- <span style="font-size: 17px;">  Designing and managing projects to ensure complete understanding of taught modules. </span>
 
 # Modules Taught:
-- Algoriths and Data Structres (Java)
-- Data Structures and Complixity (Java)
-- Java Enterprise Edition (JEE) Programming
-- Application Developement (XML)
+- <span style="font-size: 17px;">  Algoriths and Data Structres (Java) </span>
+- <span style="font-size: 17px;">  Data Structures and Complixity (Java) </span>
+- <span style="font-size: 17px;">  Java Enterprise Edition (JEE) Programming </span>
+- <span style="font-size: 17px;">  Application Developement (XML) </span>
 
 # Technologies Used:
-- Eclipse IDE with JDK 19
-- Apache Tomacat
-- MySQL
-- Oxygen XML Editor
+- <span style="font-size: 17px;">  Eclipse IDE with JDK 19 </span>
+- <span style="font-size: 17px;">  Apache Tomacat </span>
+- <span style="font-size: 17px;">  MySQL </span>
+- <span style="font-size: 17px;">  Oxygen XML Editor </span>
