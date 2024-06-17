@@ -25,7 +25,7 @@ author_profile: true
 
 ***
 
-<h2>Data Analysis/Engineering, Statistics</h2>
+<h2>Data Analysis/Engineering</h2>
 {% assign data_certs = site.certifications | where: "category", "dataEngineering" | reverse %}
 {% for certification in data_certs %}
   {% include archive-single-certs.html certification=certification %}
