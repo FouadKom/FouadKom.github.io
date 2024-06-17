@@ -48,3 +48,6 @@ from the Linked Open Data for device description as well as similarity measures 
 My work is carried in Laboratoire d’Informatique Fondamentale et Appliquée de Tours (LIFAT), and in the
 context of the Center-Val-Loire Smart Loire region project.
 </span>
+
+# Publications:
+<span style="font-size: 17px;"> [See Publications Section](/publications) </span>
