@@ -8,12 +8,10 @@ redirect_from:
   - /about.html
 ---
 
-I hold a Ph.D in Computer Science from the University of Tours, France.
+I hold a Ph.D. in Computer Science from the University of Tours, France. My research work bridges the Semantic Web, specifically Linked Open Data, with the Internet of Things (IoT) to recommend devices. My work was carried out at the Laboratoire d’Informatique Fondamentale et Appliquée de Tours (LIFAT) and within the context of the Center-Val-Loire Smart Loire region project.
 
-My research work combines between the Semantic Web, specifically Linked Open Data and the Internet of Things
-(IoT) for recommendation of devices. It is based on the utilization of semantic annotations and concepts derived
-from the Linked Open Data for device description as well as similarity measures for distinguishing similar devices.
-My work is carried in Laboratoire d’Informatique Fondamentale et Appliquée de Tours (LIFAT), and in the
-context of the Center-Val-Loire Smart Loire region project.
+During my Ph.D., I developed extensive experience in **Java programming**, applying it to various research and practical projects over several years. This hands-on experience allowed me to build robust and efficient software solutions that support my research in semantic web technologies and IoT. Additionally, I have spent two years working as an **SQL developer**, where I honed my skills in database management, query optimization, and data integration, crucial for managing and analyzing large datasets.
 
-I'm interested in **Cybersecurity**, **Machine Learning** and **Data** with several certifications in these domains.
+Beyond my core research, I have a strong interest in **Cybersecurity**, **Machine Learning**, and **Data Analytics**. I have obtained several certifications in these domains, continually expanding my knowledge and staying updated with the latest advancements. My diverse skill set and experience enable me to approach problems from multiple angles, providing innovative solutions in both academic and professional settings.
+
+With a solid foundation in both theoretical and practical aspects of computer science, I am passionate about advancing technology and contributing to projects that make a tangible impact. My combined expertise in semantic technologies, programming, and data management positions me well for tackling complex challenges in today's data-driven world.
