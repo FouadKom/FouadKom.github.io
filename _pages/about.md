@@ -8,7 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-I hold a Ph.D. in Computer Science from the University of Tours, France. My research work bridges the Semantic Web, specifically Linked Open Data, with the Internet of Things (IoT) to recommend devices. My work was carried out at the Laboratoire d’Informatique Fondamentale et Appliquée de Tours ([LIFAT](https://univ-tours.hal.science/LIFAT)) and within the context of the Center-Val-Loire [Smart Loire](https://smartloire.univ-tours.fr/) project.
+I hold a Ph.D. in Computer Science from the University of Tours, France.
+
+My research work bridges the Semantic Web, specifically Linked Open Data, with the Internet of Things (IoT) to recommend devices. My work was carried out at the Laboratoire d’Informatique Fondamentale et Appliquée de Tours ([LIFAT](https://univ-tours.hal.science/LIFAT)) and within the context of the Center-Val-Loire [Smart Loire](https://smartloire.univ-tours.fr/) project.
 
 During my Ph.D., I developed extensive experience in **Java programming**, applying it to various research and practical projects over several years. This hands-on experience allowed me to build robust and efficient software solutions that support my research in semantic web technologies and IoT. Additionally, I have spent two years working as an **SQL developer**, where I honed my skills in database management, query optimization, and data integration, crucial for managing and analyzing large datasets.
 
