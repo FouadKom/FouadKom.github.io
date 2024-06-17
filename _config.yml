@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Fouad's Homepage"
+title                    : "Homepage"
 title_separator          : "-"
 name                     : &name "Fouad Komeiha"
 description              : &description "PhD in Computer Science, Recommendation Systems and the Semantic Web."
