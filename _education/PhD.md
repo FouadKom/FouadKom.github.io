@@ -31,14 +31,14 @@ Semantic Web for Recommendation Systems.
 
 # Thesis Director:
 
--  <span style="font-size: 17px;"> [Dr. Ali Jaber](https://www.researchgate.net/profile/Ali-Jaber-2/2) </span>
--  <span style="font-size: 17px;"> [Dr. Thomas Devogele](https://www.researchgate.net/profile/Thomas-Devogele) </span>
+-  <span style="font-size: 17px;"> [Dr. Ali Jaber](https://www.researchgate.net/profile/Ali-Jaber-2/2) (Lebanese University) </span>
+-  <span style="font-size: 17px;"> [Dr. Thomas Devogele](https://www.researchgate.net/profile/Thomas-Devogele) (University of Tours)</span>
   
 
 # Thesis Co-directors:
 
-- <span style="font-size: 17px;"> [Dr. Yacine Sam](https://www.researchgate.net/profile/Yacine-Sam) </span>
-- <span style="font-size: 17px;"> [Dr. Nizar Messai](https://www.researchgate.net/profile/Nizar-Messai) </span>
+- <span style="font-size: 17px;"> [Dr. Yacine Sam](https://www.researchgate.net/profile/Yacine-Sam) (University of Tours)</span>
+- <span style="font-size: 17px;"> [Dr. Nizar Messai](https://www.researchgate.net/profile/Nizar-Messai) (University of Tours)</span>
 
 # Research Objective:
 <span style="font-size: 17px;">
