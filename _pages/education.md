@@ -11,5 +11,6 @@ author_profile: true
 
 {% for education in sorted_education %}
   {% include archive-single-edu.html education=education %}
+  ***
 {% endfor %}
 
