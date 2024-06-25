@@ -7,6 +7,14 @@ author_profile: true
 
 {% include base_path %}
 
+<h2>Cybersecurity</h2>
+{% assign cyber_certs = site.certifications | where: "category", "cybersecurity" | reverse %}
+{% for certification in cyber_certs %}
+  {% include archive-single-certs.html certification=certification %}
+{% endfor %}
+
+***
+
 <h2>Data Analysis/Engineering</h2>
 {% assign data_certs = site.certifications | where: "category", "dataEngineering" | reverse %}
 {% for certification in data_certs %}
