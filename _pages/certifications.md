@@ -31,7 +31,7 @@ author_profile: true
 
 ***
 
-<h2>Data Visualization</h2>
+<h1>Data Visualization</h1>
 {% assign data_certs = site.certifications | where: "category", "dataVisualization" | reverse %}
 {% for certification in data_certs %}
   {% include archive-single-certs.html certification=certification %}
